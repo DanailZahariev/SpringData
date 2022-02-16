@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaDBAppsExercise/JavaDBAppsExercise.iml" filepath="$PROJECT_DIR$/JavaDBAppsExercise/JavaDBAppsExercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaDBAppsLab/JavaDBAppsLab.iml" filepath="$PROJECT_DIR$/JavaDBAppsLab/JavaDBAppsLab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringData.iml" filepath="$PROJECT_DIR$/SpringData.iml" />
+    </modules>
+  </component>
+</project>
