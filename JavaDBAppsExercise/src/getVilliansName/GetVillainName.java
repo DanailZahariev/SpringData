@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class Main {
+public class GetVillainName {
     public static void main(String[] args) throws SQLException {
 
         Scanner scanner = new Scanner(System.in);
@@ -28,5 +28,6 @@ public class Main {
 
             System.out.printf("%s %d", resultSet.getString("name"), resultSet.getInt("villain_min"));
         }
+        connection.close();
     }
 }
