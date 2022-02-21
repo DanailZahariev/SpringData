@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaDBAppsExercise/JavaDBAppsExercise.iml" filepath="$PROJECT_DIR$/JavaDBAppsExercise/JavaDBAppsExercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaDBAppsLab/JavaDBAppsLab.iml" filepath="$PROJECT_DIR$/JavaDBAppsLab/JavaDBAppsLab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ORMFundamentals/ORMFundamentals.iml" filepath="$PROJECT_DIR$/ORMFundamentals/ORMFundamentals.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringData.iml" filepath="$PROJECT_DIR$/SpringData.iml" />
     </modules>
   </component>
