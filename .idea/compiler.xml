@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ORMFundamentals" />
-        <module name="HibernateIntro" />
         <module name="HibernateExercise" />
+        <module name="HibernateIntro" />
+        <module name="HibernateCodeFirst" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="HibernateCodeFirst" target="17" />
       <module name="HibernateExercise" target="17" />
       <module name="HibernateIntro" target="17" />
       <module name="ORMFundamentals" target="17" />
