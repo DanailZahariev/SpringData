@@ -16,7 +16,7 @@ public class FindLatestTenProject {
                                 "\t Project Description: %s%n" +
                                 "\t Project Start Date: %s%n" +
                                 "\t Project End Date: %s%n", project.getName(),
-                        project.getDescription(),project.getStartDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")),
-                        project.getEndDate() == null ? "null" : project.getEndDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss"))));
+                        project.getDescription(),project.getStartDate().minusHours(3).format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")),
+                        project.getEndDate() == null ? "null" : project.getEndDate().minusHours(3).format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"))));
     }
 }

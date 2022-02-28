@@ -3,15 +3,13 @@ package entities;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "cars")
-public class Car extends Vehicle {
+@Table(name = "trucks")
+public class Truck extends Vehicle {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private int seats;
-    @OneToOne
-    private PlateNumber plateNumber;
+    private double loadCapacity;
 
 
     @Override
@@ -24,11 +22,11 @@ public class Car extends Vehicle {
         this.id = id;
     }
 
-    public int getSeats() {
-        return seats;
+    public double getLoadCapacity() {
+        return loadCapacity;
     }
 
-    public void setSeats(int seats) {
-        this.seats = seats;
+    public void setLoadCapacity(double loadCapacity) {
+        this.loadCapacity = loadCapacity;
     }
 }

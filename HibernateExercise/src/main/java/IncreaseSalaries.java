@@ -3,6 +3,7 @@ import entities.EntityFactory;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import java.util.List;
 import java.util.Set;
 
 public class IncreaseSalaries {
@@ -11,7 +12,7 @@ public class IncreaseSalaries {
         EntityManagerFactory factory = EntityFactory.getEntityManager().getEntityManagerFactory();
         EntityManager entityManager = factory.createEntityManager();
 
-        Set<String> depNames = Set.of("Engineering", "Tool Design", "Marketing", "Information Services");
+        List<String> depNames = List.of("Engineering", "Tool Design", "Marketing", "Information Services");
 
         entityManager.getTransaction().begin();
 
