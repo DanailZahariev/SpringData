@@ -33,13 +33,13 @@ public class Patient {
     @Column(name = "is_insured")
     private boolean isInsured;
 
-    @OneToMany
+    @OneToMany(targetEntity = Diagnose.class, mappedBy = "patient")
     private Set<Diagnose> diagnoses;
 
-    @OneToMany
+    @OneToMany(targetEntity = Medicament.class, mappedBy = "patient")
     private Set<Medicament> medicament;
 
-    @OneToMany
+    @OneToMany(targetEntity = Visitation.class, mappedBy = "patient")
     private Set<Visitation> visitations;
 
     public Patient() {

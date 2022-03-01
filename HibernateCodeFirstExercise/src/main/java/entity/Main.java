@@ -1,3 +1,5 @@
+package entity;
+
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
 
@@ -9,5 +11,6 @@ public class Main {
 
         entityManager.getTransaction().begin();
         entityManager.getTransaction().commit();
+        entityManager.close();
     }
 }

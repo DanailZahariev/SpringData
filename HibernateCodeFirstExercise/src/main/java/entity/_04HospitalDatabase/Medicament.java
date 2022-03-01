@@ -13,6 +13,17 @@ public class Medicament {
     @Column(nullable = false)
     private String name;
 
+    @ManyToOne
+    private Patient patient;
+
+    public Patient getPatient() {
+        return patient;
+    }
+
+    public void setPatient(Patient patient) {
+        this.patient = patient;
+    }
+
     public int getId() {
         return id;
     }

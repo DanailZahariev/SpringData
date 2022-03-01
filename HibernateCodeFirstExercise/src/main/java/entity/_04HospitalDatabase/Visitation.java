@@ -17,6 +17,17 @@ public class Visitation {
     @Column(columnDefinition = "TEXT")
     private String comments;
 
+    @ManyToOne
+    private Patient patient;
+
+    public Patient getPatient() {
+        return patient;
+    }
+
+    public void setPatient(Patient patient) {
+        this.patient = patient;
+    }
+
     public int getId() {
         return id;
     }
