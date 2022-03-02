@@ -16,6 +16,14 @@ public class BillingDetails {
     @OneToOne
     private User user;
 
+    @OneToOne
+    @JoinColumn(name = "bank_account_id",referencedColumnName = "id")
+    private BankAccount bankAccount;
+
+    @OneToOne
+    @JoinColumn(name = "credit_card_id",referencedColumnName = "id")
+    private CreditCard creditCard;
+
     public BillingDetails(String number, User user) {
         this.number = number;
         this.user = user;
