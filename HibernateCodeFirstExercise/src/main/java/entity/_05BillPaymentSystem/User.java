@@ -2,6 +2,9 @@ package entity._05BillPaymentSystem;
 
 
 import javax.persistence.*;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "users")
@@ -11,10 +14,10 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name = "first_name",length = 50,nullable = false)
+    @Column(name = "first_name", length = 50, nullable = false)
     private String firstName;
 
-    @Column(name = "last_name",length = 50,nullable = false)
+    @Column(name = "last_name", length = 50, nullable = false)
     private String lastName;
 
     private String email;
@@ -22,11 +25,20 @@ public class User {
     @Column(nullable = false)
     private String password;
 
-    @OneToOne
-    private BillingDetails billingDetails;
+    @OneToMany(targetEntity = BankAccount.class, mappedBy = "user")
+    private Set<BankAccount> bankAccount;
 
-    @OneToOne
-    private CreditCard creditCard;
+    @OneToMany(targetEntity = CreditCard.class, mappedBy = "user")
+    private Set<CreditCard> creditCards;
+
+    public User(String firstName, String lastName, String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+    }
+
+    public User() {
+    }
 
     public int getId() {
         return id;
@@ -68,11 +80,19 @@ public class User {
         this.password = password;
     }
 
-    public BillingDetails getBillingDetails() {
-        return billingDetails;
+    public Set<BankAccount> getBankAccount() {
+        return Collections.unmodifiableSet(bankAccount);
     }
 
-    public void setBillingDetails(BillingDetails billingDetails) {
-        this.billingDetails = billingDetails;
+    public void setBankAccount(Set<BankAccount> bankAccount) {
+        this.bankAccount = bankAccount;
+    }
+
+    public Set<CreditCard> getCreditCards() {
+        return Collections.unmodifiableSet(creditCards);
+    }
+
+    public void setCreditCards(Set<CreditCard> creditCards) {
+        this.creditCards = creditCards;
     }
 }

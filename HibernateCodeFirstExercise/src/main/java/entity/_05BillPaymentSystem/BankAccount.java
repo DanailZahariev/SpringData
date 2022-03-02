@@ -16,8 +16,16 @@ public class BankAccount {
 
     private String swift;
 
-    @OneToMany(targetEntity = CreditCard.class)
-    private Set<CreditCard> creditCard;
+    @ManyToOne
+    private User user;
+
+
+    @OneToOne
+    @JoinColumn(name = "credit_card_id",nullable = false)
+    private CreditCard creditCard;
+
+    public BankAccount() {
+    }
 
     public int getId() {
         return id;
@@ -25,6 +33,12 @@ public class BankAccount {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public BankAccount(String name,  User user, CreditCard creditCard) {
+        this.name = name;
+        this.user = user;
+        this.creditCard = creditCard;
     }
 
     public String getName() {
@@ -41,5 +55,21 @@ public class BankAccount {
 
     public void setSwift(String swift) {
         this.swift = swift;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public CreditCard getCreditCard() {
+        return creditCard;
+    }
+
+    public void setCreditCard(CreditCard creditCard) {
+        this.creditCard = creditCard;
     }
 }

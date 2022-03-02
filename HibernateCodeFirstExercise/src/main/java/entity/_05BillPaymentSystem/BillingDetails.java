@@ -16,6 +16,14 @@ public class BillingDetails {
     @OneToOne
     private User user;
 
+    public BillingDetails(String number, User user) {
+        this.number = number;
+        this.user = user;
+    }
+
+    public BillingDetails() {
+    }
+
     public int getId() {
         return id;
     }
