@@ -31,6 +31,9 @@ public class User {
     @OneToMany(targetEntity = CreditCard.class, mappedBy = "user")
     private Set<CreditCard> creditCards;
 
+    @Column(name = "billing_details", columnDefinition = "TEXT")
+    private String billingDetails;
+
 
     public User(String firstName, String lastName, String email) {
         this.firstName = firstName;

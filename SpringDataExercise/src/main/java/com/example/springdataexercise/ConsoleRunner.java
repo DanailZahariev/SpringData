@@ -39,7 +39,8 @@ public class ConsoleRunner implements CommandLineRunner {
         List<String> books =
                 bookRepository.findAllByAuthor_FirstNameAndAuthor_LastNameOrderByReleaseDateDescTittle("George", "Powell")
                         .stream().map(book ->
-                                String.format("Release date: %s | Tittle: %s | Copies: %d", book.getReleaseDate(), book.getTittle(), book.getCopies())).collect(Collectors.toList());
+                                String.format("Release date: %s | Tittle: %s | Copies: %d",
+                                        book.getReleaseDate(), book.getTittle(), book.getCopies())).collect(Collectors.toList());
         books.forEach(System.out::println);
     }
 
