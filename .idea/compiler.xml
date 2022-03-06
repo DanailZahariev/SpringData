@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SpringDataExercise" />
+        <module name="SpringDataAdvancedQuerying" />
         <module name="SpringDataIntro" />
         <module name="HibernateIntro" />
         <module name="HibernateCodeFirst" />
@@ -21,12 +22,14 @@
       <module name="HibernateExercise" target="17" />
       <module name="HibernateIntro" target="17" />
       <module name="ORMFundamentals" target="17" />
+      <module name="SpringDataAdvancedQuerying" target="17" />
       <module name="SpringDataExercise" target="17" />
       <module name="SpringDataIntro" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SpringDataAdvancedQuerying" options="-parameters" />
       <module name="SpringDataExercise" options="-parameters" />
       <module name="SpringDataIntro" options="-parameters" />
     </option>

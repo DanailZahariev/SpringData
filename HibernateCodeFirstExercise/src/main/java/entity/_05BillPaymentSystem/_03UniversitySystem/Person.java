@@ -1,4 +1,4 @@
-package entity._03UniversitySystem;
+package entity._05BillPaymentSystem._03UniversitySystem;
 
 import javax.persistence.*;
 

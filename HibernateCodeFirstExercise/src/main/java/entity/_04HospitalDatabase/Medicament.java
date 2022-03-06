@@ -2,8 +2,7 @@ package entity._04HospitalDatabase;
 
 import javax.persistence.*;
 
-@Entity
-@Table(name = "medicaments")
+@Entity(name = "medicaments")
 public class Medicament {
 
     @Id

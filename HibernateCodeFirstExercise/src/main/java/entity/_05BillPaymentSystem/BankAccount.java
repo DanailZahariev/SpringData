@@ -3,8 +3,7 @@ package entity._05BillPaymentSystem;
 import javax.persistence.*;
 import java.util.Set;
 
-@Entity
-@Table(name = "bank_accounts")
+@Entity(name = "bank_accounts")
 public class BankAccount {
 
     @Id

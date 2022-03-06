@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/JavaDBAppsLab/JavaDBAppsLab.iml" filepath="$PROJECT_DIR$/JavaDBAppsLab/JavaDBAppsLab.iml" />
       <module fileurl="file://$PROJECT_DIR$/ORMFundamentals/ORMFundamentals.iml" filepath="$PROJECT_DIR$/ORMFundamentals/ORMFundamentals.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringData.iml" filepath="$PROJECT_DIR$/SpringData.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringDataAdvancedQuerying/SpringDataAdvancedQuerying.iml" filepath="$PROJECT_DIR$/SpringDataAdvancedQuerying/SpringDataAdvancedQuerying.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringDataExercise/SpringDataExercise.iml" filepath="$PROJECT_DIR$/SpringDataExercise/SpringDataExercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringDataIntro/SpringDataIntro.iml" filepath="$PROJECT_DIR$/SpringDataIntro/SpringDataIntro.iml" />
     </modules>

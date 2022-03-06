@@ -2,8 +2,7 @@ package entity._05BillPaymentSystem;
 
 import javax.persistence.*;
 
-@Entity
-@Table(name = "billing_details")
+@Entity(name = "billing_details")
 public class BillingDetails {
 
     @Id
@@ -17,11 +16,11 @@ public class BillingDetails {
     private User user;
 
     @OneToOne
-    @JoinColumn(name = "bank_account_id",referencedColumnName = "id")
+    @JoinColumn(name = "bank_account_id", referencedColumnName = "id")
     private BankAccount bankAccount;
 
     @OneToOne
-    @JoinColumn(name = "credit_card_id",referencedColumnName = "id")
+    @JoinColumn(name = "credit_card_id", referencedColumnName = "id")
     private CreditCard creditCard;
 
     public BillingDetails(String number, User user) {

@@ -3,8 +3,8 @@ package entity._02Sales;
 import javax.persistence.*;
 import java.util.Set;
 
-@Entity
-@Table(name = "store_locations")
+@Entity(name = "store_locations")
+
 public class StoreLocation {
 
     @Id

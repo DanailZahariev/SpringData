@@ -5,8 +5,7 @@ import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
-@Table(name = "patients")
+@Entity(name = "patients")
 public class Patient {
 
     @Id

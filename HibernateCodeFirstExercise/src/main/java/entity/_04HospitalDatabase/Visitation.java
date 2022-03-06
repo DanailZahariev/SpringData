@@ -3,8 +3,7 @@ package entity._04HospitalDatabase;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
-@Entity
-@Table(name = "visitations")
+@Entity(name = "visitations")
 public class Visitation {
 
     @Id
