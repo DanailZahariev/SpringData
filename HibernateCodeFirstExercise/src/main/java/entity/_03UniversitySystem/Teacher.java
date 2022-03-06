@@ -1,4 +1,4 @@
-package entity._05BillPaymentSystem._03UniversitySystem;
+package entity._03UniversitySystem;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
