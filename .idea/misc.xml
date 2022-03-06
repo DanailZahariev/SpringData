@@ -10,7 +10,9 @@
         <option value="$PROJECT_DIR$/HibernateCodeFirstExercise/pom.xml" />
         <option value="$PROJECT_DIR$/SpringDataIntro/pom.xml" />
         <option value="$PROJECT_DIR$/SpringDataExercise/pom.xml" />
-        <option value="$PROJECT_DIR$/SpringDataAdvancedQuerying/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringAdvancedQueringExercise/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringAdvancedQuerying/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringAdvancedQueryingExercise/pom.xml" />
       </list>
     </option>
   </component>

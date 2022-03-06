@@ -7,10 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SpringDataExercise" />
-        <module name="SpringDataAdvancedQuerying" />
+        <module name="SpringAdvancedQuerying" />
         <module name="SpringDataIntro" />
         <module name="HibernateIntro" />
         <module name="HibernateCodeFirst" />
+        <module name="SpringAdvancedQueryingExercise" />
         <module name="ORMFundamentals" />
         <module name="HibernateExercise" />
         <module name="HibernateCodeFirstExercise" />
@@ -22,6 +23,9 @@
       <module name="HibernateExercise" target="17" />
       <module name="HibernateIntro" target="17" />
       <module name="ORMFundamentals" target="17" />
+      <module name="SpringAdvancedQuering" target="17" />
+      <module name="SpringAdvancedQuerying" target="17" />
+      <module name="SpringAdvancedQueryingExercise" target="17" />
       <module name="SpringDataAdvancedQuerying" target="17" />
       <module name="SpringDataExercise" target="17" />
       <module name="SpringDataIntro" target="17" />
@@ -29,6 +33,9 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SpringAdvancedQuering" options="-parameters" />
+      <module name="SpringAdvancedQuerying" options="-parameters" />
+      <module name="SpringAdvancedQueryingExercise" options="-parameters" />
       <module name="SpringDataAdvancedQuerying" options="-parameters" />
       <module name="SpringDataExercise" options="-parameters" />
       <module name="SpringDataIntro" options="-parameters" />
