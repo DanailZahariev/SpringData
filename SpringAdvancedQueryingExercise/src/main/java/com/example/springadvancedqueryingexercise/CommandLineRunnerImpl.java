@@ -53,9 +53,28 @@ public class CommandLineRunnerImpl implements CommandLineRunner {
             case 5:
                 getBooksBeforeReleaseDate();
                 break;
+            case 6:
+                authorsSearch();
+                break;
+            case 7:
+                bookSearch();
+                break;
         }
+    }
 
+    private void bookSearch() throws IOException {
+        System.out.println("Enter string: ");
+        String line = bufferedReader.readLine();
 
+        bookService.findBooksByContainString(line).forEach(System.out::println);
+    }
+
+    private void authorsSearch() throws IOException {
+        System.out.println("Enter string: ");
+
+        String line = bufferedReader.readLine();
+
+        authorService.findAllAuthorsWithFirstNameEndWith(line).forEach(System.out::println);
     }
 
     private void getBooksBeforeReleaseDate() throws IOException {

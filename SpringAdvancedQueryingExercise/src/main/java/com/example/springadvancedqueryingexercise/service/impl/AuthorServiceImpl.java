@@ -11,6 +11,7 @@ import java.nio.file.Path;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Collectors;
+
 @Service
 public class AuthorServiceImpl implements AuthorService {
 
@@ -58,6 +59,13 @@ public class AuthorServiceImpl implements AuthorService {
                         author.getFirstName(),
                         author.getLastName(),
                         author.getBooks().size()))
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public List<String> findAllAuthorsWithFirstNameEndWith(String line) {
+        return authorRepository.findAuthorByFirstNameEndingWith(line)
+                .stream().map(a -> String.format("%s %s", a.getFirstName(), a.getLastName()))
                 .collect(Collectors.toList());
     }
 }
