@@ -14,4 +14,5 @@ public interface AuthorService {
 
     List<String> findAllAuthorsWithFirstNameEndWith(String line);
 
+    List<String> findAllAuthorsAndTotalCopies();
 }

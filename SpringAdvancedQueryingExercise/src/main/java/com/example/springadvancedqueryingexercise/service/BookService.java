@@ -29,4 +29,15 @@ public interface BookService {
 
     List<String> findBooksByContainString(String line);
 
+    List<String> findAuthorLastnameStartsWith(String line);
+
+    int findCountOfBooksWithTittleLongerThan(int tittleLength);
+
+    int addCopiesToBook(String date, int copies);
+
+    List<String> getBookInfo(String book);
+
+    int deleteWithLessCopiesThan(int amount);
+
+    int findAuthorTotalBooks(String firstName, String lastName);
 }

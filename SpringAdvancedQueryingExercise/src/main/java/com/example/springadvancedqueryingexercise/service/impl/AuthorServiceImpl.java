@@ -1,6 +1,7 @@
 package com.example.springadvancedqueryingexercise.service.impl;
 
 import com.example.springadvancedqueryingexercise.model.entity.Author;
+import com.example.springadvancedqueryingexercise.model.entity.Book;
 import com.example.springadvancedqueryingexercise.repository.AuthorRepository;
 import com.example.springadvancedqueryingexercise.service.AuthorService;
 import org.springframework.stereotype.Service;
@@ -67,5 +68,14 @@ public class AuthorServiceImpl implements AuthorService {
         return authorRepository.findAuthorByFirstNameEndingWith(line)
                 .stream().map(a -> String.format("%s %s", a.getFirstName(), a.getLastName()))
                 .collect(Collectors.toList());
+    }
+
+    @Override
+    public List<String> findAllAuthorsAndTotalCopies() {
+        return authorRepository.getAuthorTotalCopies().stream().
+                map(a -> String.format("%s %s - %d", a.getFirstName(), a.getLastName(),
+                        a.getBooks().stream().map(Book::getCopies).reduce(Integer::sum).
+                                orElse(0))).collect(Collectors.toList());
+
     }
 }

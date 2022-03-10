@@ -15,4 +15,9 @@ public interface AuthorRepository extends JpaRepository<Author, Long> {
     List<Author> findAllByBooksSizeDESC();
 
     List<Author> findAuthorByFirstNameEndingWith(String line);
+
+    @Query("SELECT a, SUM(b.copies) AS countBook FROM Author a" +
+            " JOIN a.books AS b GROUP BY b.author ORDER BY countBook DESC ")
+    List<Author> getAuthorTotalCopies();
+
 }

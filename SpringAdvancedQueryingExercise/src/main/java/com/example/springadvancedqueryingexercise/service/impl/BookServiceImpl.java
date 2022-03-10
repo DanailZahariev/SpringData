@@ -121,6 +121,44 @@ public class BookServiceImpl implements BookService {
     }
 
 
+    @Override
+    public List<String> findAuthorLastnameStartsWith(String line) {
+        return bookRepository.findAllByAuthor_LastNameStartsWith(line)
+                .stream().map(b -> String.format("%s (%s %s)", b.getTitle(), b.getAuthor().getFirstName(), b.getAuthor().getLastName()))
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public int findCountOfBooksWithTittleLongerThan(int tittleLength) {
+        return bookRepository.countBookByTitleIsGreaterThan(tittleLength);
+    }
+
+    @Override
+    public int addCopiesToBook(String date, int copies) {
+        DateTimeFormatter format = DateTimeFormatter.ofPattern("dd MMM yyyy");
+        LocalDate after = LocalDate.parse(date, format);
+
+        return this.bookRepository.addCopiesToBookAfter(after, copies);
+    }
+
+    @Override
+    public List<String> getBookInfo(String book) {
+        return this.bookRepository.findBooksByTitle(book).stream().map(b ->
+                String.format("%s %s %s %.2f", b.getTitle(), b.getEditionType()
+                        , b.getAgeRestriction(), b.getPrice())).collect(Collectors.toList());
+    }
+
+    @Override
+    public int deleteWithLessCopiesThan(int amount) {
+        return this.bookRepository.deleteByCopiesLessThan(amount);
+    }
+
+    @Override
+    public int findAuthorTotalBooks(String firstName, String lastName) {
+        return this.bookRepository.getTotalBooksByAuthor(firstName, lastName);
+    }
+
+
     private Book createBookFromInfo(String[] bookInfo) {
         EditionType editionType = EditionType.values()[Integer.parseInt(bookInfo[0])];
         LocalDate releaseDate = LocalDate
@@ -138,6 +176,5 @@ public class BookServiceImpl implements BookService {
                 .getRandomCategories();
 
         return new Book(editionType, releaseDate, copies, price, ageRestriction, title, author, categories);
-
     }
 }
