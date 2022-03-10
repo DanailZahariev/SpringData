@@ -1,7 +1,7 @@
-package com.example.springdataexercise.services;
+package com.example.springdataexercise.bookshop.services;
 
-import com.example.springdataexercise.entity.Author;
-import com.example.springdataexercise.repository.AuthorRepository;
+import com.example.springdataexercise.bookshop.entity.Author;
+import com.example.springdataexercise.bookshop.repository.AuthorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

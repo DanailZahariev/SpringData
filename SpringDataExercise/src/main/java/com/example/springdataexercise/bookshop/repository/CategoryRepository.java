@@ -1,6 +1,6 @@
-package com.example.springdataexercise.repository;
+package com.example.springdataexercise.bookshop.repository;
 
-import com.example.springdataexercise.entity.Category;
+import com.example.springdataexercise.bookshop.entity.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

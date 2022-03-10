@@ -1,4 +1,4 @@
-package com.example.springdataexercise.services;
+package com.example.springdataexercise.bookshop.services;
 
 import java.io.IOException;
 

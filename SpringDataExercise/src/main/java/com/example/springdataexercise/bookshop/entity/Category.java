@@ -1,4 +1,4 @@
-package com.example.springdataexercise.entity;
+package com.example.springdataexercise.bookshop.entity;
 
 import javax.persistence.*;
 

@@ -1,10 +1,10 @@
-package com.example.springdataexercise;
+package com.example.springdataexercise.bookshop;
 
-import com.example.springdataexercise.entity.Author;
-import com.example.springdataexercise.entity.Book;
-import com.example.springdataexercise.repository.AuthorRepository;
-import com.example.springdataexercise.repository.BookRepository;
-import com.example.springdataexercise.services.SeedService;
+import com.example.springdataexercise.bookshop.entity.Author;
+import com.example.springdataexercise.bookshop.entity.Book;
+import com.example.springdataexercise.bookshop.repository.AuthorRepository;
+import com.example.springdataexercise.bookshop.repository.BookRepository;
+import com.example.springdataexercise.bookshop.services.SeedService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

@@ -1,6 +1,6 @@
-package com.example.springdataexercise.repository;
+package com.example.springdataexercise.bookshop.repository;
 
-import com.example.springdataexercise.entity.Author;
+import com.example.springdataexercise.bookshop.entity.Author;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -8,7 +8,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 @Repository
-public interface AuthorRepository extends JpaRepository<Author,Integer> {
+public interface AuthorRepository extends JpaRepository<Author, Integer> {
 
     List<Author> findDistinctByBooksReleaseDateBefore(LocalDate releaseDate);
 
