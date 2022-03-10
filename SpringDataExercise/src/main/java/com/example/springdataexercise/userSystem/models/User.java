@@ -1,6 +1,6 @@
-package com.example.springdataexercise.bookshop.usersystem.models;
+package com.example.springdataexercise.userSystem.models;
 
-import com.example.usersystem.validator.password.Password;
+import com.example.springdataexercise.userSystem.password.Password;
 
 import javax.persistence.*;
 import javax.validation.constraints.*;

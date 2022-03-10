@@ -1,6 +1,5 @@
 package com.example.springdataexercise.bookshop.services;
 
-import bookshop.entity.*;
 import com.example.springdataexercise.bookshop.repository.AuthorRepository;
 import com.example.springdataexercise.bookshop.repository.BookRepository;
 import com.example.springdataexercise.bookshop.repository.CategoryRepository;

@@ -1,4 +1,5 @@
-package com.example.springdataexercise.bookshop.usersystem.repositories;
+package com.example.springdataexercise.userSystem.repositories;
+
 
 public class UserRepository {
 }

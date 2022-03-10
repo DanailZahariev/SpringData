@@ -1,4 +1,5 @@
-package com.example.springdataexercise.bookshop.usersystem.services;
+package com.example.springdataexercise.userSystem.services;
+
 
 public interface UserService {
 }

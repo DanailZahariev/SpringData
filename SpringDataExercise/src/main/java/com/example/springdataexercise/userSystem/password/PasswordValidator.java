@@ -1,4 +1,4 @@
-package com.example.springdataexercise.bookshop.usersystem.validator.password;
+package com.example.springdataexercise.userSystem.password;
 
 import org.springframework.stereotype.Component;
 

@@ -1,4 +1,4 @@
-package com.example.springdataexercise.bookshop.usersystem;
+package com.example.springdataexercise.userSystem;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

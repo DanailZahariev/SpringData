@@ -1,5 +1,4 @@
-package com.example.springdataexercise.bookshop.usersystem.models;
-
+package com.example.springdataexercise.userSystem.models;
 import javax.persistence.*;
 import java.util.Set;
 

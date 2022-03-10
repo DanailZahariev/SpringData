@@ -1,4 +1,4 @@
-package com.example.springdataexercise.bookshop.usersystem.models;
+package com.example.springdataexercise.userSystem.models;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -25,7 +25,7 @@ public class Album {
     private Set<Picture> pictures;
 
     @ManyToOne
-    @JoinColumn(name = "owner_id",referencedColumnName = "id")
+    @JoinColumn(name = "owner_id", referencedColumnName = "id")
     private User owner;
 
 }
