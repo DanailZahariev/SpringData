@@ -14,6 +14,8 @@
       <module fileurl="file://$PROJECT_DIR$/SpringData.iml" filepath="$PROJECT_DIR$/SpringData.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringDataExercise/SpringDataExercise.iml" filepath="$PROJECT_DIR$/SpringDataExercise/SpringDataExercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringDataIntro/SpringDataIntro.iml" filepath="$PROJECT_DIR$/SpringDataIntro/SpringDataIntro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMappingObjects/SpringMappingObjects.iml" filepath="$PROJECT_DIR$/SpringMappingObjects/SpringMappingObjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMappingObjectsExercise/SpringMappingObjectsExercise.iml" filepath="$PROJECT_DIR$/SpringMappingObjectsExercise/SpringMappingObjectsExercise.iml" />
     </modules>
   </component>
 </project>

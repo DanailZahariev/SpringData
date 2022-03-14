@@ -12,6 +12,8 @@
         <module name="HibernateIntro" />
         <module name="HibernateCodeFirst" />
         <module name="SpringAdvancedQueryingExercise" />
+        <module name="SpringMappingObjectsExercise" />
+        <module name="SpringMappingObjects" />
         <module name="ORMFundamentals" />
         <module name="HibernateExercise" />
         <module name="HibernateCodeFirstExercise" />
@@ -29,6 +31,8 @@
       <module name="SpringDataAdvancedQuerying" target="17" />
       <module name="SpringDataExercise" target="17" />
       <module name="SpringDataIntro" target="17" />
+      <module name="SpringMappingObjects" target="17" />
+      <module name="SpringMappingObjectsExercise" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -39,6 +43,8 @@
       <module name="SpringDataAdvancedQuerying" options="-parameters" />
       <module name="SpringDataExercise" options="-parameters" />
       <module name="SpringDataIntro" options="-parameters" />
+      <module name="SpringMappingObjects" options="-parameters" />
+      <module name="SpringMappingObjectsExercise" options="-parameters" />
     </option>
   </component>
 </project>

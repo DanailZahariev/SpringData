@@ -65,6 +65,7 @@ public class CommandLineRunnerImpl implements CommandLineRunner {
                 break;
             case 9:
                 countBooks();
+                break;
             case 10:
                 getTotalBookCopies();
                 break;
@@ -135,7 +136,8 @@ public class CommandLineRunnerImpl implements CommandLineRunner {
 
         int tittleLength = Integer.parseInt(bufferedReader.readLine());
 
-        System.out.println(bookService.findCountOfBooksWithTittleLongerThan(tittleLength));
+        System.out.println("There are " + bookService.findCountOfBooksWithTittleLongerThan(tittleLength) +
+                " books with longer tittle than " + tittleLength + " symbols");
 
 
     }
