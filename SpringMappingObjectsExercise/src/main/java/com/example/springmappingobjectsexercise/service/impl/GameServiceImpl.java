@@ -91,14 +91,20 @@ public class GameServiceImpl implements GameService {
     @Override
     public void viewAllGames() {
         List<Game> allGames = gameRepository.findAll();
-        List<GameViewAllDto> gameViewAllDtos = new ArrayList<>();
+        List<GameViewAllDto> gameViewAllDto = new ArrayList<>();
 
-        for (Game game : allGames) {
-            GameViewAllDto gameViewAllDto = modelMapper.map(game, GameViewAllDto.class);
-            gameViewAllDtos.add(gameViewAllDto);
-        }
 
-        gameViewAllDtos.forEach(g -> System.out.printf("%s %.2f%n", g.getTittle(), g.getPrice()));
+        allGames.stream().map(dto -> modelMapper.map(dto, GameViewAllDto.class))
+                .forEach(gameViewAllDto::add);
+
+        gameViewAllDto.forEach(g -> System.out.printf("%s %.2f%n", g.getTittle(), g.getPrice()));
+
+//        for (Game game : allGames) {
+//            GameViewAllDto gameViewAllDto = modelMapper.map(game, GameViewAllDto.class);
+//            gameViewAllDto.add(gameViewAllDto);
+//        }
+//
+//        gameViewAllDto.forEach(g -> System.out.printf("%s %.2f%n", g.getTittle(), g.getPrice()));
 
 
     }
