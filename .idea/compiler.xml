@@ -13,6 +13,7 @@
         <module name="HibernateCodeFirst" />
         <module name="SpringAdvancedQueryingExercise" />
         <module name="SpringMappingObjectsExercise" />
+        <module name="JSONProcessing" />
         <module name="SpringMappingObjects" />
         <module name="ORMFundamentals" />
         <module name="HibernateExercise" />
@@ -24,6 +25,7 @@
       <module name="HibernateCodeFirstExercise" target="17" />
       <module name="HibernateExercise" target="17" />
       <module name="HibernateIntro" target="17" />
+      <module name="JSONProcessing" target="17" />
       <module name="ORMFundamentals" target="17" />
       <module name="SpringAdvancedQuering" target="17" />
       <module name="SpringAdvancedQuerying" target="17" />
@@ -37,6 +39,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="JSONProcessing" options="-parameters" />
       <module name="SpringAdvancedQuering" options="-parameters" />
       <module name="SpringAdvancedQuerying" options="-parameters" />
       <module name="SpringAdvancedQueryingExercise" options="-parameters" />
