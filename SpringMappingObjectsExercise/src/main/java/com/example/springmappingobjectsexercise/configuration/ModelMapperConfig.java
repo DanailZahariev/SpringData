@@ -21,13 +21,8 @@ public class ModelMapperConfig {
         modelMapper.typeMap(GameAddDto.class, Game.class)
                 .addMappings(mapper -> mapper.map(GameAddDto::getThumbnailUrl, Game::setImageThumbnail));
 
-        Converter<String, LocalDate> localDateConverter = new Converter<String, LocalDate>() {
-            @Override
-            public LocalDate convert(MappingContext<String, LocalDate> mappingContext) {
-                return LocalDate.parse(mappingContext.getSource(),
-                        DateTimeFormatter.ofPattern("dd-MM-yyyy"));
-            }
-        };
+        Converter<String, LocalDate> localDateConverter = mappingContext -> LocalDate.parse(mappingContext.getSource(),
+                DateTimeFormatter.ofPattern("dd-MM-yyyy"));
         modelMapper.addConverter(localDateConverter);
 
         return modelMapper;

@@ -62,7 +62,6 @@ public class CommandLineRunnerImp implements CommandLineRunner {
 
     private void usersAndProducts() {
         List<UserWithSoldProductsDto> userWithSoldProductsDto = this.userService.findAllUsersWithSoldProducts();
-
         String content = gson.toJson(userWithSoldProductsDto);
 
         System.out.println(content);

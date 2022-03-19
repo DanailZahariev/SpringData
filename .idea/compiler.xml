@@ -8,16 +8,17 @@
         <outputRelativeToContentRoot value="true" />
         <module name="SpringDataExercise" />
         <module name="SpringAdvancedQuerying" />
+        <module name="HibernateCodeFirst" />
+        <module name="JSONProcessing" />
+        <module name="HibernateExercise" />
         <module name="SpringDataIntro" />
         <module name="HibernateIntro" />
-        <module name="HibernateCodeFirst" />
         <module name="SpringAdvancedQueryingExercise" />
         <module name="SpringMappingObjectsExercise" />
-        <module name="JSONProcessing" />
         <module name="SpringMappingObjects" />
         <module name="ORMFundamentals" />
-        <module name="HibernateExercise" />
         <module name="HibernateCodeFirstExercise" />
+        <module name="XMLExercise" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -35,6 +36,7 @@
       <module name="SpringDataIntro" target="17" />
       <module name="SpringMappingObjects" target="17" />
       <module name="SpringMappingObjectsExercise" target="17" />
+      <module name="XMLExercise" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -48,6 +50,7 @@
       <module name="SpringDataIntro" options="-parameters" />
       <module name="SpringMappingObjects" options="-parameters" />
       <module name="SpringMappingObjectsExercise" options="-parameters" />
+      <module name="XMLExercise" options="-parameters" />
     </option>
   </component>
 </project>
