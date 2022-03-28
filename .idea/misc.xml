@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/RealDeal_Skeleton" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -17,6 +20,7 @@
         <option value="$PROJECT_DIR$/SpringMappingObjectsExercise/pom.xml" />
         <option value="$PROJECT_DIR$/JSONProcessing/pom.xml" />
         <option value="$PROJECT_DIR$/XMLExercise/pom.xml" />
+        <option value="$USER_HOME$/Downloads/RealDeal_Skeleton/pom.xml" />
       </list>
     </option>
   </component>
