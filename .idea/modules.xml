@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ExamPrep/ExamPrep.iml" filepath="$PROJECT_DIR$/ExamPrep/ExamPrep.iml" />
       <module fileurl="file://$PROJECT_DIR$/HibernateCodeFirst/HibernateCodeFirst.iml" filepath="$PROJECT_DIR$/HibernateCodeFirst/HibernateCodeFirst.iml" />
       <module fileurl="file://$PROJECT_DIR$/HibernateCodeFirstExercise/HibernateCodeFirstExercise.iml" filepath="$PROJECT_DIR$/HibernateCodeFirstExercise/HibernateCodeFirstExercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/HibernateExercise/HibernateExercise.iml" filepath="$PROJECT_DIR$/HibernateExercise/HibernateExercise.iml" />
