@@ -27,6 +27,7 @@
       <module name="HibernateExercise" target="17" />
       <module name="HibernateIntro" target="17" />
       <module name="JSONProcessing" target="17" />
+      <module name="MVCProject" target="17" />
       <module name="ORMFundamentals" target="17" />
       <module name="SpringAdvancedQuering" target="17" />
       <module name="SpringAdvancedQuerying" target="17" />
@@ -42,6 +43,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="JSONProcessing" options="-parameters" />
+      <module name="MVCProject" options="-parameters" />
       <module name="SpringAdvancedQuering" options="-parameters" />
       <module name="SpringAdvancedQuerying" options="-parameters" />
       <module name="SpringAdvancedQueryingExercise" options="-parameters" />
