@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ExamPrep/AirlineExam.iml" filepath="$PROJECT_DIR$/ExamPrep/AirlineExam.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ExamPrep/ExamPrep.iml" filepath="$PROJECT_DIR$/ExamPrep/ExamPrep.iml" />
       <module fileurl="file://$PROJECT_DIR$/HibernateCodeFirst/HibernateCodeFirst.iml" filepath="$PROJECT_DIR$/HibernateCodeFirst/HibernateCodeFirst.iml" />
       <module fileurl="file://$PROJECT_DIR$/HibernateCodeFirstExercise/HibernateCodeFirstExercise.iml" filepath="$PROJECT_DIR$/HibernateCodeFirstExercise/HibernateCodeFirstExercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/HibernateExercise/HibernateExercise.iml" filepath="$PROJECT_DIR$/HibernateExercise/HibernateExercise.iml" />
@@ -20,7 +18,6 @@
       <module fileurl="file://$PROJECT_DIR$/SpringMappingObjects/SpringMappingObjects.iml" filepath="$PROJECT_DIR$/SpringMappingObjects/SpringMappingObjects.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringMappingObjectsExercise/SpringMappingObjectsExercise.iml" filepath="$PROJECT_DIR$/SpringMappingObjectsExercise/SpringMappingObjectsExercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/XMLExercise/XMLExercise.iml" filepath="$PROJECT_DIR$/XMLExercise/XMLExercise.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ExamPrep/instagraphlite/instagraphlite.iml" filepath="$PROJECT_DIR$/ExamPrep/instagraphlite/instagraphlite.iml" />
     </modules>
   </component>
 </project>
