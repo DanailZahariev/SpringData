@@ -18,12 +18,13 @@
         <module name="SpringMappingObjects" />
         <module name="ORMFundamentals" />
         <module name="HibernateCodeFirstExercise" />
+        <module name="instagraphlite" />
         <module name="XMLExercise" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Airline_Skeleton" target="11" />
-      <module name="AirlineExam" target="17" />
+      <module name="AirlineExam" target="16" />
       <module name="exam" target="12" />
       <module name="HibernateCodeFirst" target="17" />
       <module name="HibernateCodeFirstExercise" target="17" />
