@@ -21,10 +21,10 @@ public class ExportController extends BaseController {
 
 
     @GetMapping("/passengers-by-tickets")
-    public ModelAndView exportCarsByPictures(){
+    public ModelAndView exportCarsByPictures() {
         String passengers = this.passengerService
                 .getPassengersOrderByTicketsCountDescendingThenByEmail();
 
-        return super.view("export/export-passengers-by-tickets.html","passengers", passengers);
+        return super.view("export/export-passengers-by-tickets.html", "passengers", passengers);
     }
 }
